@@ -21,30 +21,14 @@
 
 // COMMAND ----------
 
-val bikeDF = spark.read.option("header", "true").csv("/databricks-datasets/bikeSharing/data-001/day.csv").drop("dteday")
+val bikeDF = spark.read
+  .option("header", "true")
+  .option("inferSchema", "true")
+  .csv("/databricks-datasets/bikeSharing/data-001/day.csv").drop("dteday")
 
 // COMMAND ----------
 
 display(bikeDF)
-
-// COMMAND ----------
-
-// MAGIC %md 
-// MAGIC 
-// MAGIC Convert all of the columns to a double, could be done with a Schema object or a select.
-// MAGIC 
-// MAGIC This was just the quick and dirty way to cast everything to a double.
-
-// COMMAND ----------
-
-import org.apache.spark.sql.functions.col
-var bikeToDoubleDF = bikeDF
-bikeToDoubleDF.columns.foreach(column => bikeToDoubleDF = bikeToDoubleDF.withColumn(column, col(column).cast("double")))
-bikeToDoubleDF.printSchema
-
-// COMMAND ----------
-
-display(bikeToDoubleDF)
 
 // COMMAND ----------
 
@@ -59,10 +43,10 @@ display(bikeToDoubleDF)
 import org.apache.spark.ml.feature.VectorAssembler
 
 val assembler = new VectorAssembler()  
-    .setInputCols(bikeToDoubleDF.columns)
+    .setInputCols(bikeDF.columns)
     .setOutputCol("features")
 
-val featureDF = assembler.transform(bikeToDoubleDF)
+val featureDF = assembler.transform(bikeDF)
 featureDF.createOrReplaceTempView("bike_features")
 
 // COMMAND ----------
