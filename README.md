@@ -1,6 +1,8 @@
 # Spark Examples within Databricks [Current Version 2.4.0]
  
-A set of Databricks notebooks that demonstrate or explain different features of Spark that I have run into and learned/used.
+I have found that Databricks Notebooks and their HTML exports with cell output combined with GitHub Pages provides a clean way to show examples not just for Spark, but for any Python or Scala code.
+
+So below are a few sections of examples/demonstrations of, mostly Spark, concepts I found interesting or felt like I should record somewhere
 
 ### Spark Internals and Configurations
 [Catalyst Optimizer](https://needmorenodes.github.io/databricks-examples/Catalyst/Catalyst.html)
