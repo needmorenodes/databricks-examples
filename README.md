@@ -10,3 +10,6 @@ A set of Databricks notebooks that demonstrate or explain different features of 
 
 ### Interesting Cases
 [Rest Within Executors](https://needmorenodes.github.io/databricks-examples/InterestingCases/RestCallsWithinExecutors/RestWithinExecutor.html)
+
+### Machine Learning
+[Generating Heatmaps](https://needmorenodes.github.io/databricks-examples/MachineLearning/GeneratingHeatmap/GeneratingHeatmaps.html)
