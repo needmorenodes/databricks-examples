@@ -4,6 +4,8 @@ I have found that Databricks Notebooks and their HTML exports with cell output c
 
 So below are a few sections of examples/demonstrations of, mostly Spark, concepts I found interesting or felt like I should record somewhere
 
+These examples started out with Spark 2.4.0, as more versions release I will attempt to keep these updated. I will also branch off if anything major must change. For now 2.4.0 will be held in master.
+
 ### Spark Internals and Configurations
 [Catalyst Optimizer](https://needmorenodes.github.io/databricks-examples/Catalyst/Catalyst.html)
 
