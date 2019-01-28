@@ -7,6 +7,8 @@ So below are a few sections of examples/demonstrations of, mostly Spark, concept
 ### Spark Internals and Configurations
 [Catalyst Optimizer](https://needmorenodes.github.io/databricks-examples/Catalyst/Catalyst.html)
 
+<!--- [Joins](https://needmorenodes.github.io/databricks-examples/Internals/Joins/Joins.html) -->
+
 ### SQL Functions
 [The Window Function](https://needmorenodes.github.io/databricks-examples/SQLFunctions/Window/WindowFunction.html)
 
@@ -15,3 +17,14 @@ So below are a few sections of examples/demonstrations of, mostly Spark, concept
 
 ### Machine Learning
 [Generating Heatmaps](https://needmorenodes.github.io/databricks-examples/MachineLearning/GeneratingHeatmap/GeneratingHeatmaps.html)
+
+[Generating Scatter Matrices](https://needmorenodes.github.io/databricks-examples/MachineLearning/GeneratingScatterMatrices/GeneratingScatterMatrices.html)
+
+<!--- [Logistic Regression](https://needmorenodes.github.io/databricks-examples/MachineLearning/) -->
+
+<!--- [Linear Regression](https://needmorenodes.github.io/databricks-examples/MachineLearning/) -->
+
+<!--- [K-Fold Cross Validation](https://needmorenodes.github.io/databricks-examples/MachineLearning/) -->
+
+<!--- [](https://needmorenodes.github.io/databricks-examples/MachineLearning/) -->
+

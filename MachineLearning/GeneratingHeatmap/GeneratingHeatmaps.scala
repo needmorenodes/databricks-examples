@@ -34,7 +34,7 @@ display(bikeDF)
 
 // MAGIC %md
 // MAGIC 
-// MAGIC Utilize the VectorAssembler to turn the features into a Vecror for use in the correlation object.
+// MAGIC Utilize the VectorAssembler to turn the features into a Vector for use in the correlation object.
 // MAGIC 
 // MAGIC Also create a temp view to be able to read this dataset from Python as well.
 
@@ -52,7 +52,7 @@ featureDF.createOrReplaceTempView("bike_features")
 // COMMAND ----------
 
 // MAGIC %md 
-// MAGIC Calculate the correlation between all of the features using the spark Correlaton object.
+// MAGIC Calculate the correlation between all of the features using the spark Correlation object.
 // MAGIC 
 // MAGIC Also turn this dataframe of correlations into a temp view of transfering to Python.
 
@@ -70,13 +70,12 @@ display(correlations)
 // MAGIC 
 // MAGIC Take the correlations and the bike columns and create a Pandas Dataframe
 // MAGIC 
-// MAGIC The act of creating a Pandas dataframe will pull your datafrme into the driver memory so be careful doing this with large datasets.
+// MAGIC The act of creating a Pandas dataframe will pull your entire dataframe into the driver memory, so be careful doing this with large datasets.
 
 // COMMAND ----------
 
 // MAGIC %python
 // MAGIC import pandas as pd
-// MAGIC import seaborn as sns 
 // MAGIC 
 // MAGIC featureDF = spark.table("bike_features")
 // MAGIC correlationDF = spark.table("bike_correlations")
