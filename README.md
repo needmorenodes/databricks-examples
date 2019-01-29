@@ -7,7 +7,9 @@ So below are a few sections of examples/demonstrations of, mostly Spark, concept
 These examples started out with Spark 2.4.0, as more versions release I will attempt to keep these updated. I will also branch off if anything major must change. For now 2.4.0 will be held in master.
 
 ### Spark Internals and Configurations
-[Catalyst Optimizer](https://needmorenodes.github.io/databricks-examples/Catalyst/Catalyst.html)
+[Catalyst Optimizer](https://needmorenodes.github.io/databricks-examples/SparkInternals/Catalyst/Catalyst.html)
+
+[Joins](https://needmorenodes.github.io/databricks-examples/SparkInternals/Joins/Joins.html)
 
 <!--- [Joins](https://needmorenodes.github.io/databricks-examples/Internals/Joins/Joins.html) -->
 
