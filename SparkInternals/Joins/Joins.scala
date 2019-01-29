@@ -23,7 +23,9 @@
 // MAGIC 
 // MAGIC Since Stage boundries are built on shuffles, a join will almost always cause a new stage to be created. *Apparently unless you are in community edition and only have 1 executor*
 // MAGIC 
-// MAGIC This will be apperent by the DAG generated, if I can run this notebook on a proper cluster I will link the DAG images.
+// MAGIC The Stage layout for joins will often look like this:
+// MAGIC 
+// MAGIC <img src="https://needmorenodes.github.io/databricks-examples/SparkInternals/Images/SortMergeJoin.png" alt="drawing" width="600"/>
 
 // COMMAND ----------
 
